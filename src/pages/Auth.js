@@ -66,6 +66,7 @@ const Auth = ({ setActive, setUser }) => {
       <div className="container">
         <div className="col-12 text-center">
           <div className="text-center heading py-2">
+          <h2 style={{fontFamily: "Dawning of a New Day", textDecoration:"underline", fontWeight:"bolder"}}>Blogger</h2>
             {!signUp ? "Sign-In" : "Sign-Up"}
           </div>
         </div>

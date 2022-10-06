@@ -83,6 +83,7 @@ const Home = ({ setActive, user }) => {
     <div className="container-fluid pb-4 pt-4 padding">
       <div className="container padding">
         <div className="row mx-0">
+        <h2 style={{fontFamily: "Dawning of a New Day", textDecoration:"underline", fontWeight:"bolder"}}>Blogger</h2>
           <Trending blogs={trendBlogs} />
           <div className="col-md-8">
             <BlogSection

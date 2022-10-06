@@ -25,10 +25,13 @@ const initialState = {
 const categoryOption = [
   "Fashion",
   "Technology",
+  "Education",
   "Food",
   "Politics",
   "Sports",
   "Business",
+  "Travel",
+  "Others"
 ];
 
 const AddEditBlog = ({ user, setActive }) => {
@@ -149,6 +152,7 @@ const AddEditBlog = ({ user, setActive }) => {
       <div className="container">
         <div className="col-12">
           <div className="text-center heading py-2">
+            <h2 style={{ fontFamily: "Dawning of a New Day", textDecoration: "underline", fontWeight:"bolder" }}>Blogger</h2>
             {id ? "Update Blog" : "Create Blog"}
           </div>
         </div>

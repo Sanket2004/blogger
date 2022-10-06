@@ -1,5 +1,9 @@
 $yellow:#f5bc04;
 
+* {
+	font-family: 'League Spartan', sans-serif;
+}
+
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
@@ -55,6 +59,7 @@ $yellow:#f5bc04;
 	@include transition(0.5s);
 	background: $yellow!important;
 	@include clip-path(polygon(100% 0, 100% 85%, 14% 85%, 0 100%, 0% 60%, 0 0));
+	border-radius: 5px;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #222!important;
@@ -76,6 +81,7 @@ $yellow:#f5bc04;
 		padding-right: 20px!important;
 		margin: 0 20px;
 		position: relative;
+		border-radius: 5px;
 	}
 }
 
@@ -100,10 +106,14 @@ $yellow:#f5bc04;
 }
 
 .input-text-box {
-    @include border-radius(0!important);
-	font-size: 15px!important;
-	height: 45px!important;
+    @include border-radius(5!important);
+/* 	font-size: 15px!important;
+ */	height: 45px!important;
 	letter-spacing: 1px!important;  
+}
+
+.form-control {
+	font-size: 17px;
 }
 
 .form-control:focus {
@@ -132,7 +142,7 @@ $yellow:#f5bc04;
 }
 
 .description-box {
-    @include border-radius(0!important);
+    @include border-radius(5!important);
 	height: 150px;
 	resize: none;
 	padding-top: 20px!important;
@@ -141,7 +151,7 @@ $yellow:#f5bc04;
 
 .btn-add {
     background: #bf7034 !important;
-	@include border-radius(0!important);
+	@include border-radius(5!important);
 	color: #fff!important;
 	padding: 10px 50px!important;
 }
@@ -206,7 +216,7 @@ $yellow:#f5bc04;
     font-size: 17px;
 	color: #222!important;
 	font-weight: 800;
-    font-family: "Poppins";
+	font-family: 'League Spartan', sans-serif;
     text-decoration: none;
 	display: block;
 }
@@ -238,7 +248,7 @@ $yellow:#f5bc04;
     font-size: 15px;
 	color: #222;
 	display: block;
-    font-family: "Poppins";
+	font-family: 'League Spartan', sans-serif;
     text-decoration: none;
 }
 
@@ -481,4 +491,8 @@ $yellow:#f5bc04;
  -webkit-transform: translateX(0);
  transform: translateX(0);
 }
+}
+
+.Toastify {
+	font-family: 'League Spartan', sans-serif;
 }
